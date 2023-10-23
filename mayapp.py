@@ -40,8 +40,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = database
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-app.config['SECRET_KEY'] = "cretivoxtechnology22"
-key = b'qXkOeccBROMqPi3MCFrNc6czJDrEJopBOpoWWYBKdpE='
+app.config['SECRET_KEY'] = ""
+key = b''
 fernet = Fernet(key)
 
 class User(db.Model):
